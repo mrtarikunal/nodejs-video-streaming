@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Video Streaming App</title>
+	<link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+	<style>
+	body {
+	background-color:#effaff;
+	}
+	.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  font-size:42px;
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+	</style>
+
+  </head>
+  <body>
+  <div style="display:flex;justify-content: center;margin-top:200px;flex-direction:column;align-items: center;">
+     
+	  <div class="typewriter">
+  <h1 style="margin-bottom:50px;">Create a Node JS Video streaming Application.</h1>
+</div>
+<br>
+	  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="940"
+    height="528.75"
+    poster="/static/images/MY_VIDEO_POSTER.png"
+    data-setup="{}"
+  >
+    <source src="/video/1" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+</video>
+  </div>	  
+  </body>
+</html>
